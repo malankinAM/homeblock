@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>homeblock</title>
+	<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;400;500;600;700;800;900&display=swap"
+		rel="stylesheet">
+
+	<link rel="stylesheet" href="./style.css">
+
+
+</head>
+
+<body>
+
+
+	<div class="wrapper">
+
+		<header>
+			<div class="header-inner">
+				<div class="logo">
+					<img style="width: 70px; height: 90px;" src="images/Group 1 (1).svg" alt="">
+				</div>
+				<div class="menu">
+					<nav>
+						<ul>
+							<li><a href="#">Домашняя</a></li>
+							<li><a href="#">Книги</a></li>
+							<li><a href="#">Блог</a></li>
+							<li><a href="#">Отзывы</a></li>
+							<li><a href="#">Контакты</a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</header>
+
+
+		<div class="content">
+			<div class="text">
+				<h1>Lorem ipsum dolor sit amet consectetur adipisicing.</h1>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit quia, nesciunt maiores iste
+					perspiciatis et&nbsp;similique magnam fuga inventore quaerat atque amet accusantium corporis debitis ut
+					deserunt veniam veritatis reprehenderit!</p>
+			</div>
+			<div class="img">
+				<div class="banner-img">
+					<img src="./images/1011-removebg-preview.png" alt="" style="width: 700px; height: 550px;">
+				</div>
+				<div class="circular-text">
+					<img src="images/Group 1 (1).svg" alt="">
+				</div>
+			</div>
+		</div>
+
+		<div class="products">
+			<div class="card">
+				<div class="img">
+					<img src="./images/600005154649b0-removebg-preview.png" alt="" style="width: 200px; height: 250px;">
+				</div>
+				<div class="text">
+					<h6>Алгоритмы</h6>
+					<h4>Грокаем Алгоритмы</h4>
+				</div>
+				<a href="#">Взять</a>
+			</div>
+
+			<div class="card">
+				<div class="img">
+					<img src="./images/2.webp" alt="" style="width: 200px; height: 250px;">
+				</div>
+				<div class="text">
+					<h6>Роберт Мартин</h6>
+					<h4>Чистый код</h4>
+				</div>
+				<a href="#">Взять</a>
+			</div>
+
+			<div class="card">
+				<div class="img">
+					<img src="./images/3.jfif" alt="">
+				</div>
+				<div class="text">
+					<h6>Джон Дакетт</h6>
+					<h4>HTML&CSS</h4>
+				</div>
+				<a href="#">Взять</a>
+			</div>
+
+		</div>
+
+	</div>
+
+
+	<!-- Gsap link -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+	<script>
+
+		gsap.from(".logo", {
+			duration: 1,
+			opacity: 0,
+			y: -100
+		})
+		gsap.from("nav ul li", {
+			duration: 1,
+			opacity: 0,
+			y: -100,
+			stagger: .2
+		})
+		gsap.from(".content .text > *", {
+			duration: 1,
+			opacity: 0,
+			y: 100,
+			stagger: .6,
+			delay: 1.6
+		})
+		gsap.from(".products .card", {
+			duration: 1,
+			opacity: 0,
+			y: 100,
+			stagger: .6,
+			delay: 2
+		})
+		gsap.from(".content .img", {
+			duration: 3,
+			opacity: 0,
+			x: 300,
+			stagger: .6,
+			delay: 3
+		})
+
+
+	</script>
+</body>
+
+</html>
